@@ -1,3 +1,5 @@
+# Lesson 1
+
 from calendar import c
 import cv2
 import numpy
@@ -5,7 +7,7 @@ import argparse
 
 ap = argparse.ArgumentParser()
 
-ap.add_argument("-i", "--image", required=True, help="C:\\Users\\Black Beauty\\Documents\\Printing\\halloween_2021.png")
+ap.add_argument("-i", "--image", required=True, help="<Your File Path Here>")
 ap.add_argument("-o", "--output", required=False)
 args = vars(ap.parse_args())
 
