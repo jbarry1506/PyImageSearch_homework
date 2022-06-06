@@ -17,10 +17,11 @@ cv2.imshow("Original", image)
 M = np.float32([[1, 0, 25], [0, 1, 50]])
 shifted = cv2.warpAffine(image, M, (image.shape[1], image.shape[0]))
 cv2.imshow("shifted down and right", shifted)
-cv2.waitKey(0)
 
 M = np.float32([[1, 0, -10], [0, 1, -20]])
 shifted = cv2.warpAffine(image, M, (image.shape[1], image.shape[0]))
 cv2.imshow("image shifted up and left", shifted)
-cv2.waitKey(0)
 
+shifted = imutils.translate(image, -30, -30)
+cv2.imshow("shift up left", shifted)
+cv2.waitKey(0)
