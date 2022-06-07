@@ -1,3 +1,5 @@
+# lesson 3
+
 import numpy as np
 import imutils
 import cv2
