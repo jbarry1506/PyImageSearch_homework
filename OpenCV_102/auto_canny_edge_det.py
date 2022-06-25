@@ -1,5 +1,3 @@
-# OpenCV102 - Lesson 8
-
 import numpy as np
 import argparse
 import glob
