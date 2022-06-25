@@ -1,13 +1,19 @@
+"""
+Lesson to explain how to use grayscale histograms
+"""
+
 # grayscale_histogram
 # Usage
-# python grayscale_histogram.py --image beach.png
+# python lesson_1A.py --image beach.png
 
-from matplotlib import pyplot as plt
 import argparse
 import cv2
+from matplotlib import pyplot as plt
+
 
 ap = argparse.ArgumentParser()
-ap.add_argument("-i", "--image", type=str, default="beach.png", help="image to create histogram from")
+ap.add_argument("-i", "--image", type=str,
+    default="beach.png", help="image to create histogram from")
 args = vars(ap.parse_args())
 image = cv2.imread(args["image"])
 cv2.imshow("Original", image)
@@ -36,4 +42,3 @@ plt.ylabel("% of Pixels")
 plt.plot(hist)
 plt.xlim([0, 256])
 plt.show()
-
