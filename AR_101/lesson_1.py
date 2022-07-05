@@ -2,6 +2,10 @@
 Augmented Reality 101
 Lesson 1
 Detect Apriltags
+- unable to install Apriltags on Windows
+- apriltags github
+    https://github.com/AprilRobotics/apriltag
+    - documentation says it officially only works on Linux
 """
 
 import argparse
